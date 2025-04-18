@@ -28,7 +28,7 @@ static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, voi
     return realSize;
 }
 
-int RandomN(void) {
+int getRandomNumCFunction(void) {
     CURL *curlHandle;
     CURLcode res;
     float number = 0;
@@ -53,12 +53,10 @@ int RandomN(void) {
         if(res != CURLE_OK) {
             fprintf(stderr, "요청 실패: %s\n", curl_easy_strerror(res));
         } else {
-            // 예시 응답: [42]
             // 간단하게 sscanf를 이용하여 JSON 배열 내부의 숫자만 파싱
             if(sscanf(chunk.memory, "[%f]", &number) == 1) {
-                printf("받은 랜덤 숫자: %f\n", number);
                 number = number / 100;
-                printf("받은 랜덤 숫자/100: %f\n", number);
+                printf("randomNumber:%.2f\n", number);
             } else {
                 fprintf(stderr, "응답 파싱 실패\n");
             }

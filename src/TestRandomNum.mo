@@ -1,6 +1,5 @@
 model TestRandomNum
   import GetRandomNum.runRandomNum;
-  Integer status;
-  equation
-    status = runRandomNum();
+initial equation
+  runRandomNum();
 end TestRandomNum;

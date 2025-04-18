@@ -9,11 +9,11 @@
 
   OPENMODELICAHOME                    = "C:/Program Files/OpenModelica1.25.0-64bit"
 
-  guid                                = "{90f3cf01-0a0d-422c-b9d7-657f8029f084}"
+  guid                                = "{c4618953-4644-4f30-80b6-9e95b22ff6d1}"
 
   description                         = ""
   generationTool                      = "OpenModelica Compiler OpenModelica v1.25.0 (64-bit)"
-  generationDateAndTime               = "2025-04-18T10:52:32Z"
+  generationDateAndTime               = "2025-04-18T12:02:15Z"
 
   variableNamingConvention            = "structured"
 
@@ -31,7 +31,7 @@
   numberOfRealAlgebraicAliasVariables = "0"  cmt_numberOfRealAlgebraicAliasVariables = "NA:       number of alias variables,                          OMC"
   numberOfRealParameters              = "0"  cmt_numberOfRealParameters              = "NP:       number of parameters,                               OMC"
 
-  numberOfIntegerAlgebraicVariables   = "1"  cmt_numberOfIntegerAlgebraicVariables   = "NYINT:    number of alg. int variables,                       OMC"
+  numberOfIntegerAlgebraicVariables   = "0"  cmt_numberOfIntegerAlgebraicVariables   = "NYINT:    number of alg. int variables,                       OMC"
   numberOfIntegerAliasVariables       = "0"  cmt_numberOfIntegerAliasVariables       = "NAINT:    number of alias int variables,                      OMC"
   numberOfIntegerParameters           = "0"  cmt_numberOfIntegerParameters           = "NPINT:    number of int parameters,                           OMC"
 
@@ -57,17 +57,6 @@
   <!-- variables in the model -->
   <ModelVariables>
 
-  <ScalarVariable
-    name = "status"
-    valueReference = "1000"
-    variability = "discrete" isDiscrete = "true"
-    causality = "local" isValueChangeable = "false"
-    alias = "noAlias"
-    classIndex = "0" classType = "iAlg"
-    isProtected = "false" hideResult = "" isEncrypted = "false" initNonlinear = "false"
-    fileName = "C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src/testRandomNum.mo" startLine = "3" startColumn = "3" endLine = "3" endColumn = "17" fileWritable = "true">
-    <Integer fixed="false" />
-  </ScalarVariable>
 
 
 

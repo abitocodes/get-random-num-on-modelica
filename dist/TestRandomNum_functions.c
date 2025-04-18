@@ -12,7 +12,7 @@ modelica_integer omc_GetRandomNum_runRandomNum(threadData_t *threadData)
   int _status_ext;
   modelica_integer _status;
   // _status has no default value.
-  _status_ext = RandomN();
+  _status_ext = getRandomNumCFunction();
   _status = (modelica_integer)_status_ext;
   return _status;
 }

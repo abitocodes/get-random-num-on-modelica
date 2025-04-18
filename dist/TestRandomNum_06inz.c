@@ -7,13 +7,25 @@ extern "C" {
 #endif
 
 void TestRandomNum_functionInitialEquations_0(DATA *data, threadData_t *threadData);
-extern void TestRandomNum_eqFunction_2(DATA *data, threadData_t *threadData);
 
+/*
+equation index: 1
+type: ALGORITHM
+
+  GetRandomNum.runRandomNum();
+*/
+void TestRandomNum_eqFunction_1(DATA *data, threadData_t *threadData)
+{
+  TRACE_PUSH
+  const int equationIndexes[2] = {1,1};
+  omc_GetRandomNum_runRandomNum(threadData);
+  TRACE_POP
+}
 OMC_DISABLE_OPT
 void TestRandomNum_functionInitialEquations_0(DATA *data, threadData_t *threadData)
 {
   TRACE_PUSH
-  TestRandomNum_eqFunction_2(data, threadData);
+  TestRandomNum_eqFunction_1(data, threadData);
   TRACE_POP
 }
 

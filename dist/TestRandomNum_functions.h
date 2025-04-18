@@ -23,7 +23,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_GetRandomNum_runRandomNum,2,0) {(void*)
  * The function has annotation(Include=...>) or is builtin
  * the external function definition should be present
  * in one of these files and have this prototype:
- * extern int RandomN();
+ * extern int getRandomNumCFunction();
  */
 #include "TestRandomNum_model.h"
 

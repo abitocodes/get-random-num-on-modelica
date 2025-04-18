@@ -107,19 +107,6 @@ int TestRandomNum_setb_function(DATA *data, threadData_t *threadData)
 }
 
 
-/*
-equation index: 2
-type: SIMPLE_ASSIGN
-status = GetRandomNum.runRandomNum()
-*/
-void TestRandomNum_eqFunction_2(DATA *data, threadData_t *threadData)
-{
-  TRACE_PUSH
-  const int equationIndexes[2] = {1,2};
-  (data->localData[0]->integerVars[data->simulationInfo->integerVarsIndex[0]] /* status DISCRETE */) = omc_GetRandomNum_runRandomNum(threadData);
-  TRACE_POP
-}
-
 OMC_DISABLE_OPT
 int TestRandomNum_functionDAE(DATA *data, threadData_t *threadData)
 {
@@ -132,7 +119,6 @@ int TestRandomNum_functionDAE(DATA *data, threadData_t *threadData)
   data->simulationInfo->needToIterate = 0;
   data->simulationInfo->discreteCall = 1;
   TestRandomNum_functionLocalKnownVars(data, threadData);
-  TestRandomNum_eqFunction_2(data, threadData);
   data->simulationInfo->discreteCall = 0;
   
 #if !defined(OMC_MINIMAL_RUNTIME)
@@ -202,7 +188,6 @@ void TestRandomNum_computeVarIndices(size_t* realIndex, size_t* integerIndex, si
   
   
   /* intAlgVars */
-  integerIndex[i_integer+1] = integerIndex[i_integer] + ((modelica_integer) 1); i_integer++; /* status DISCRETE */
   
   /* boolAlgVars */
   
@@ -323,7 +308,7 @@ void TestRandomNum_setupDataStruc(DATA *data, threadData_t *threadData)
   data->modelData->modelFilePrefix = "TestRandomNum";
   data->modelData->resultFileName = NULL;
   data->modelData->modelDir = "C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src";
-  data->modelData->modelGUID = "{90f3cf01-0a0d-422c-b9d7-657f8029f084}";
+  data->modelData->modelGUID = "{c4618953-4644-4f30-80b6-9e95b22ff6d1}";
   #if defined(OPENMODELICA_XML_FROM_FILE_AT_RUNTIME)
   data->modelData->initXMLData = NULL;
   data->modelData->modelDataXml.infoXMLData = NULL;
@@ -356,7 +341,7 @@ void TestRandomNum_setupDataStruc(DATA *data, threadData_t *threadData)
   data->modelData->nStates = 0;
   data->modelData->nVariablesRealArray = 0;
   data->modelData->nDiscreteReal = 0;
-  data->modelData->nVariablesIntegerArray = 1;
+  data->modelData->nVariablesIntegerArray = 0;
   data->modelData->nVariablesBooleanArray = 0;
   data->modelData->nVariablesStringArray = 0;
   data->modelData->nParametersReal = 0;
@@ -377,7 +362,7 @@ void TestRandomNum_setupDataStruc(DATA *data, threadData_t *threadData)
   data->modelData->modelDataXml.modelInfoXmlLength = 0;
   data->modelData->modelDataXml.nFunctions = 1;
   data->modelData->modelDataXml.nProfileBlocks = 0;
-  data->modelData->modelDataXml.nEquations = 3;
+  data->modelData->modelDataXml.nEquations = 2;
   data->modelData->nMixedSystems = 0;
   data->modelData->nLinearSystems = 0;
   data->modelData->nNonLinearSystems = 0;
