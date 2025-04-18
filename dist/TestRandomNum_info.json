@@ -1,0 +1,13 @@
+{"format":"Transformational debugger info","version":1,
+"info":{"name":"TestRandomNum","description":""},
+"variables":{
+"status":{"comment":"","kind":"discrete","type":"Integer","unit":"","displayUnit":"","source":{"info":{"file":"C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src/testRandomNum.mo","lineStart":3,"lineEnd":3,"colStart":3,"colEnd":17}}}
+},
+"equations":[{"eqIndex":0,"tag":"dummy"},
+{"eqIndex":1,"tag":"alias","equation":[2],"section":"initial"},
+{"eqIndex":2,"section":"regular","tag":"assign","defines":["status"],"uses":[],"equation":["GetRandomNum.runRandomNum()"],"source":{"info":{"file":"C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src/testRandomNum.mo","lineStart":5,"lineEnd":5,"colStart":5,"colEnd":28}}}
+],
+"functions":[
+"GetRandomNum.runRandomNum"
+]
+}
