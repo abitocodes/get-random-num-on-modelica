@@ -31,7 +31,7 @@ static size_t WriteMemoryCallback(void *contents, size_t size, size_t nmemb, voi
 int getRandomNumCFunction(void) {
     CURL *curlHandle;
     CURLcode res;
-    float number = 0;
+    int number = 0;
     
     // 응답 데이터를 저장할 구조체 초기화
     struct MemoryStruct chunk;
@@ -43,7 +43,7 @@ int getRandomNumCFunction(void) {
     curlHandle = curl_easy_init();
     if(curlHandle) {
         // 요청 URL 설정
-        curl_easy_setopt(curlHandle, CURLOPT_URL, "http://www.randomnumberapi.com/api/v1.0/random?min=1&max=5&count=1");
+        curl_easy_setopt(curlHandle, CURLOPT_URL, "http://www.randomnumberapi.com/api/v1.0/random?min=0&max=5&count=1");
         // 데이터를 저장할 콜백 함수 설정
         curl_easy_setopt(curlHandle, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
         curl_easy_setopt(curlHandle, CURLOPT_WRITEDATA, (void *)&chunk);
@@ -54,9 +54,8 @@ int getRandomNumCFunction(void) {
             fprintf(stderr, "요청 실패: %s\n", curl_easy_strerror(res));
         } else {
             // 간단하게 sscanf를 이용하여 JSON 배열 내부의 숫자만 파싱
-            if(sscanf(chunk.memory, "[%f]", &number) == 1) {
-                number = number / 100;
-                printf("randomNumber:%.2f\n", number);
+            if(sscanf(chunk.memory, "[%d]", &number) == 1) {
+                printf("randomNumber:%d\n", number);
             } else {
                 fprintf(stderr, "응답 파싱 실패\n");
             }

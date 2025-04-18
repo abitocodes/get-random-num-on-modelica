@@ -9,20 +9,20 @@ extern "C" {
 
 modelica_integer omc_GetRandomNum_runRandomNum(threadData_t *threadData)
 {
-  int _status_ext;
-  modelica_integer _status;
-  // _status has no default value.
-  _status_ext = getRandomNumCFunction();
-  _status = (modelica_integer)_status_ext;
-  return _status;
+  int _randomNumber_ext;
+  modelica_integer _randomNumber;
+  // _randomNumber has no default value.
+  _randomNumber_ext = getRandomNumCFunction();
+  _randomNumber = (modelica_integer)_randomNumber_ext;
+  return _randomNumber;
 }
 modelica_metatype boxptr_GetRandomNum_runRandomNum(threadData_t *threadData)
 {
-  modelica_integer _status;
-  modelica_metatype out_status;
-  _status = omc_GetRandomNum_runRandomNum(threadData);
-  out_status = mmc_mk_icon(_status);
-  return out_status;
+  modelica_integer _randomNumber;
+  modelica_metatype out_randomNumber;
+  _randomNumber = omc_GetRandomNum_runRandomNum(threadData);
+  out_randomNumber = mmc_mk_icon(_randomNumber);
+  return out_randomNumber;
 }
 
 #ifdef __cplusplus

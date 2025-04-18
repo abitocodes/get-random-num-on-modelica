@@ -1,7 +1,7 @@
 package GetRandomNum
   function runRandomNum
-    output Integer status "Return status of runRandomNum()";
-    external "C" status = getRandomNumCFunction()
+    output Integer randomNumber "Return random number of runRandomNum()";
+    external "C" randomNumber = getRandomNumCFunction()
     annotation( 
                Library="curl",
                IncludeDirectory="modelica://GetRandomNum/source",
