@@ -323,7 +323,7 @@ void TestRandomNum_setupDataStruc(DATA *data, threadData_t *threadData)
   data->modelData->modelFilePrefix = "TestRandomNum";
   data->modelData->resultFileName = NULL;
   data->modelData->modelDir = "C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src";
-  data->modelData->modelGUID = "{ba3d7ec4-2ba2-4f10-af49-2636f392544d}";
+  data->modelData->modelGUID = "{90f3cf01-0a0d-422c-b9d7-657f8029f084}";
   #if defined(OPENMODELICA_XML_FROM_FILE_AT_RUNTIME)
   data->modelData->initXMLData = NULL;
   data->modelData->modelDataXml.infoXMLData = NULL;

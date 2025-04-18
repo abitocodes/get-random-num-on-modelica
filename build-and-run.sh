@@ -1,0 +1,1 @@
+omc +d=initialization ./runTest.mos

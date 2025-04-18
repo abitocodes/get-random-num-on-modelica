@@ -1,10 +1,10 @@
-받은 랜덤 숫자: 2.000000
-받은 랜덤 숫자/100: 0.020000
-받은 랜덤 숫자: 2.000000
-받은 랜덤 숫자/100: 0.020000
-LOG_SUCCESS       | info    | The initialization finished successfully without homotopy method.
 받은 랜덤 숫자: 4.000000
 받은 랜덤 숫자/100: 0.040000
-받은 랜덤 숫자: 2.000000
-받은 랜덤 숫자/100: 0.020000
+받은 랜덤 숫자: 1.000000
+받은 랜덤 숫자/100: 0.010000
+LOG_SUCCESS       | info    | The initialization finished successfully without homotopy method.
+받은 랜덤 숫자: 1.000000
+받은 랜덤 숫자/100: 0.010000
+받은 랜덤 숫자: 4.000000
+받은 랜덤 숫자/100: 0.040000
 LOG_SUCCESS       | info    | The simulation finished successfully.
