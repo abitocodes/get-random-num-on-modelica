@@ -13,11 +13,11 @@ extern "C" {
 
 
 DLLDirection
-modelica_integer omc_GetRandomNum_runRandomNum(threadData_t *threadData);
+modelica_integer omc_TestRandomNum_runRandomNum(threadData_t *threadData);
 DLLDirection
-modelica_metatype boxptr_GetRandomNum_runRandomNum(threadData_t *threadData);
-static const MMC_DEFSTRUCTLIT(boxvar_lit_GetRandomNum_runRandomNum,2,0) {(void*) boxptr_GetRandomNum_runRandomNum,0}};
-#define boxvar_GetRandomNum_runRandomNum MMC_REFSTRUCTLIT(boxvar_lit_GetRandomNum_runRandomNum)
+modelica_metatype boxptr_TestRandomNum_runRandomNum(threadData_t *threadData);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_TestRandomNum_runRandomNum,2,0) {(void*) boxptr_TestRandomNum_runRandomNum,0}};
+#define boxvar_TestRandomNum_runRandomNum MMC_REFSTRUCTLIT(boxvar_lit_TestRandomNum_runRandomNum)
 
 /*
  * The function has annotation(Include=...>) or is builtin

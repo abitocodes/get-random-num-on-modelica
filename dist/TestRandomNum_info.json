@@ -4,9 +4,9 @@
 
 },
 "equations":[{"eqIndex":0,"tag":"dummy"},
-{"eqIndex":1,"section":"initial","tag":"algorithm","equation":["GetRandomNum.runRandomNum();"],"source":{"info":{"file":"C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src/TestRandomNum.mo","lineStart":4,"lineEnd":4,"colStart":3,"colEnd":17}}}
+{"eqIndex":1,"section":"initial","tag":"algorithm","equation":["TestRandomNum.runRandomNum();"],"source":{"info":{"file":"C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src/TestRandomNum.mo","lineStart":12,"lineEnd":12,"colStart":5,"colEnd":19}}}
 ],
 "functions":[
-"GetRandomNum.runRandomNum"
+"TestRandomNum.runRandomNum"
 ]
 }

@@ -287,17 +287,12 @@ struct OpenModelicaGeneratedFunctionCallbacks TestRandomNum_callback = {
 
 };
 
-#define _OMC_LIT_RESOURCE_0_name_data "GetRandomNum"
-#define _OMC_LIT_RESOURCE_0_dir_data "C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src/GetRandomNum"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_0_name,12,_OMC_LIT_RESOURCE_0_name_data);
-static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_0_dir,75,_OMC_LIT_RESOURCE_0_dir_data);
+#define _OMC_LIT_RESOURCE_0_name_data "TestRandomNum"
+#define _OMC_LIT_RESOURCE_0_dir_data "C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_0_name,13,_OMC_LIT_RESOURCE_0_name_data);
+static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_0_dir,62,_OMC_LIT_RESOURCE_0_dir_data);
 
-#define _OMC_LIT_RESOURCE_1_name_data "TestRandomNum"
-#define _OMC_LIT_RESOURCE_1_dir_data "C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_1_name,13,_OMC_LIT_RESOURCE_1_name_data);
-static const MMC_DEFSTRINGLIT(_OMC_LIT_RESOURCE_1_dir,62,_OMC_LIT_RESOURCE_1_dir_data);
-
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_RESOURCES,4,MMC_ARRAY_TAG) {MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_0_name), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_0_dir), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_1_name), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_1_dir)}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_RESOURCES,2,MMC_ARRAY_TAG) {MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_0_name), MMC_REFSTRINGLIT(_OMC_LIT_RESOURCE_0_dir)}};
 void TestRandomNum_setupDataStruc(DATA *data, threadData_t *threadData)
 {
   assertStreamPrint(threadData,0!=data, "Error while initialize Data");
@@ -308,7 +303,7 @@ void TestRandomNum_setupDataStruc(DATA *data, threadData_t *threadData)
   data->modelData->modelFilePrefix = "TestRandomNum";
   data->modelData->resultFileName = NULL;
   data->modelData->modelDir = "C:/VD/Github/simulate-simple-mo/get-random-num-on-modelica/src";
-  data->modelData->modelGUID = "{f762507f-d5e9-41a0-a8eb-378948eec99e}";
+  data->modelData->modelGUID = "{bb433f11-fe98-415d-81c0-0249f7e9850d}";
   #if defined(OPENMODELICA_XML_FROM_FILE_AT_RUNTIME)
   data->modelData->initXMLData = NULL;
   data->modelData->modelDataXml.infoXMLData = NULL;

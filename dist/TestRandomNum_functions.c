@@ -7,7 +7,7 @@ extern "C" {
 #include "TestRandomNum_includes.h"
 
 
-modelica_integer omc_GetRandomNum_runRandomNum(threadData_t *threadData)
+modelica_integer omc_TestRandomNum_runRandomNum(threadData_t *threadData)
 {
   int _randomNumber_ext;
   modelica_integer _randomNumber;
@@ -16,11 +16,11 @@ modelica_integer omc_GetRandomNum_runRandomNum(threadData_t *threadData)
   _randomNumber = (modelica_integer)_randomNumber_ext;
   return _randomNumber;
 }
-modelica_metatype boxptr_GetRandomNum_runRandomNum(threadData_t *threadData)
+modelica_metatype boxptr_TestRandomNum_runRandomNum(threadData_t *threadData)
 {
   modelica_integer _randomNumber;
   modelica_metatype out_randomNumber;
-  _randomNumber = omc_GetRandomNum_runRandomNum(threadData);
+  _randomNumber = omc_TestRandomNum_runRandomNum(threadData);
   out_randomNumber = mmc_mk_icon(_randomNumber);
   return out_randomNumber;
 }

@@ -27,7 +27,7 @@ extern "C" {
 
 #include "TestRandomNum_functions.h"
 
-#define GetRandomNum_runRandomNum_index 0
+#define TestRandomNum_runRandomNum_index 0
 
 extern void TestRandomNum_callExternalObjectDestructors(DATA *_data, threadData_t *threadData);
 #if !defined(OMC_NUM_NONLINEAR_SYSTEMS) || OMC_NUM_NONLINEAR_SYSTEMS>0

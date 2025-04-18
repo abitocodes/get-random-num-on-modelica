@@ -12,13 +12,13 @@ void TestRandomNum_functionInitialEquations_0(DATA *data, threadData_t *threadDa
 equation index: 1
 type: ALGORITHM
 
-  GetRandomNum.runRandomNum();
+  TestRandomNum.runRandomNum();
 */
 void TestRandomNum_eqFunction_1(DATA *data, threadData_t *threadData)
 {
   TRACE_PUSH
   const int equationIndexes[2] = {1,1};
-  omc_GetRandomNum_runRandomNum(threadData);
+  omc_TestRandomNum_runRandomNum(threadData);
   TRACE_POP
 }
 OMC_DISABLE_OPT
