@@ -1,4 +1,4 @@
 cd("dist"); // dist 폴더로 이동
-loadFile("../src/TestRandomNum.mo");
-simulate(TestRandomNum, numberOfIntervals=1);
+loadFile("../src/RandomNumberGenerator.mo");
+simulate(RandomNumberGenerator, numberOfIntervals=1);
 getErrorString();

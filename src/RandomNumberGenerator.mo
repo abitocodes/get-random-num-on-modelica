@@ -1,13 +1,12 @@
-
-  model TestRandomNum
-  function runRandomNum
+model RandomNumberGenerator
+  function getRandomNum
     output Integer randomNumber "Return random number of runRandomNum()";
     external "C" randomNumber = getRandomNumCFunction()
     annotation(
               Library="curl",
-              IncludeDirectory="modelica://TestRandomNum",
+              IncludeDirectory="modelica://RandomNumberGenerator",
               Include="#include \"getRandomNum.c\"");
-  end runRandomNum;
+  end getRandomNum;
   initial equation
-    runRandomNum();
-  end TestRandomNum; 
+    getRandomNum();
+end RandomNumberGenerator; 
