@@ -5,7 +5,7 @@ model RandomNumberGenerator
     annotation(
               Library="curl",
               IncludeDirectory="modelica://RandomNumberGenerator",
-              Include="#include \"getRandomNum.c\"");
+              Include="#include \"external\getRandomNum.c\"");
   end getRandomNum;
   initial equation
     getRandomNum();
