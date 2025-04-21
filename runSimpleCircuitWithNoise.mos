@@ -1,0 +1,17 @@
+// Modelica 시뮬레이션 스크립트
+cd("dist-runSimpleCircuitWithNoise"); // dist 폴더로 이동
+loadModel(Modelica);  // Modelica 표준 라이브러리 로드
+loadFile("../src/RandomNumberGenerator.mo");
+loadFile("../src/SimpleCircuitWithNoise.mo");  // 사용자 정의 패키지 로드
+
+// 시뮬레이션 설정
+simulate(
+  SimpleCircuitWithNoise,  // 시뮬레이션 대상 모델
+  stopTime=1,                   // 1초 동안 시뮬레이션
+  numberOfIntervals=10          // 결과 해상도
+);
+
+// 시뮬레이션 결과 처리
+val(V, 1);  // 1초 시점에서의 전류 값 출력 (0.1A 예상)
+plot(V);    // 시간에 따른 전류 변화 그래프 표시
+getErrorString();

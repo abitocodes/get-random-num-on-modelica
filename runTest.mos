@@ -1,4 +1,7 @@
+// Modelica 시뮬레이션 스크립트
 cd("dist"); // dist 폴더로 이동
 loadFile("../src/RandomNumberGenerator.mo");
 simulate(RandomNumberGenerator, numberOfIntervals=1);
+val(randomNumber, 1);
+// plot(randomNumber);    // 시간에 따른 전류 변화 그래프 표시
 getErrorString();
